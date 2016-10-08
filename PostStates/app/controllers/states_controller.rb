@@ -5,11 +5,11 @@ class StatesController < ApplicationController
 	end
 
 	def new
-		@state = State.new
+		@state = current_user.states.build
 	end
 
 	def create
-		@state = State.new(state_params)
+		@state = current_user.states.build(state_params)
 
 		if @state.save
 			redirect_to @state
