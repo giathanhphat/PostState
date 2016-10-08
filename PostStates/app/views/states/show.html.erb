@@ -1,7 +1,23 @@
-<%= @state.content %>
-
+<div class="row">
+	<div class="col-md-12">
+		<div class="col-md-2">
+			<div class="thumbnail">
+				<img src="http://imageshack.com/a/img923/5504/t6cyGr.jpg" alt="avatar">
+			</div>
+		</div>
+		<div class="col-md-10">
+			<h2><strong>User: </strong><%= @state.user.email %></h2>
+			<p>Published at <%= time_ago_in_words(@state.created_at) %> ago.</p>
+		</div>
+	</div>
+	<div class="canletrai"><strong>State: </strong>
+		<%= @state.content %>
+	</div>
+</div>
 <br>
+<div class="taobutton">
+<%= link_to 'Back', root_path %>
+</div>
 
-<%= link_to "Edit", edit_state_path(@state) %>
-<%= link_to "Delete", state_path(@state), method: :delete, data: { confirm: "Bạn chắc chắc muốn xóa?"} %>
-<%= link_to "Home", root_path %>
+
+
