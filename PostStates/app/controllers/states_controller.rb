@@ -1,6 +1,6 @@
 class StatesController < ApplicationController
 	before_action :find_state, only: [:show, :edit, :update, :destroy]
-	before_action :authenticate_user!
+	before_action :authenticate_user!, except: [:index, :show]
 	def index
 		@states = State.all.order("created_at DESC")
 	end
