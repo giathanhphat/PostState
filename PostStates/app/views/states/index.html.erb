@@ -1,7 +1,18 @@
-<% @states.each do |state| %>
-	<h2><%= link_to state.content, state %></h2>
-	<p>Đăng lúc <%= time_ago_in_words(state.created_at) %> trước bởi <%= state.user.email %> </p>
-	
-<% end %>
 
-<%= link_to "New State", new_state_path %>
+	<div class="row">
+	<div class="col-md-10 col-md-offset-1 body_index">
+		<% @states.each do |state| %>
+		<div class="col-md-12">
+		<div class="col-md-2">
+			<div class="thumbnail">
+				<img src="http://imageshack.com/a/img923/5504/t6cyGr.jpg" alt="">
+			</div>
+	</div>
+	<div class="col-md-10">
+		<h2><%= link_to state.content, state %></h2>
+		<p>Đăng lúc <%= time_ago_in_words(state.created_at) %> trước bởi <%= state.user.email %></p>
+	</div>
+	</div>
+	<% end %>
+	</div>
+	</div>
