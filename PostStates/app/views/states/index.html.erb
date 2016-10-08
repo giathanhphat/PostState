@@ -1,1 +1,6 @@
-<p>Hello</p>
+<% @states.each do |state| %>
+	<h2><%= state.content %></h2>
+	<p>Đăng lúc <%= time_ago_in_words(state.created_at) %> trước</p>
+<% end %>
+
+<%= link_to "New State", new_state_path %>
