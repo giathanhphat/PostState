@@ -13,6 +13,12 @@
 	<div class="canletrai"><strong>State: </strong>
 		<%= @state.content %>
 	</div>
+	<div class="comment">
+		<h2>Comment</h2>
+		<h4>Số lượng comment: <%= @state.comments.count %></h4>
+		<%= render @state.comments %>
+		<%= render 'comments/form' %>
+	</div>
 </div>
 <br>
 <div class="taobutton">

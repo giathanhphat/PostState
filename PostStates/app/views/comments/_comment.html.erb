@@ -1,0 +1,5 @@
+<div class="comment">
+	<p><strong><%= comment.user.email %>:</strong> <%= comment.comment %></p>
+	<%= link_to 'Edit Comment', edit_state_comment_path(comment.state, comment) %> | 
+	<%= link_to 'Delete Comment', [comment.state, comment], method: :delete, data: { confirm: "Bạn chắc chắc muốn xóa?"} %>
+</div>
