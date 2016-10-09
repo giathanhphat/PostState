@@ -1,5 +1,5 @@
 <h2>Edit Comment</h2>
-<%= form_for([@state, @comment]) do |f| %>
+<%= form_for([@state, @comment], remote: true) do |f| %>
 	<%= f.text_area :comment, size: "50x5" %>
 	<br>
 	<%= f.submit %>
