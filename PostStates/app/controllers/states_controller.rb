@@ -3,10 +3,15 @@ class StatesController < ApplicationController
 	before_action :authenticate_user!, except: [:index, :show]
 	def index
 		@states = State.all.order("created_at DESC")
+		
 	end
 
 	def new
 		@state = current_user.states.build
+		respond_to do |format|
+			format.html
+			format.js # render states/new.js.erb
+		end
 	end
 
 	def create

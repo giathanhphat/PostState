@@ -4,7 +4,10 @@ class CommentsController < ApplicationController
 		@comment = @state.comments.create(params[:comment].permit(:comment))
 		@comment.user_id = current_user.id if current_user
 		if @comment.save
-			redirect_to state_path(@state)
+			respond_to do |format|
+			format.html {redirect_to state_path(@state)}
+			format.js # render comments/create.js.erb
+		end
 		else
 			render 'new'
 		end

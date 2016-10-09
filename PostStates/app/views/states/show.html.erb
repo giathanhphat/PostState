@@ -15,9 +15,14 @@
 	</div>
 	<div class="comment">
 		<h2>Comment</h2>
-		<h4>Số lượng comment: <%= @state.comments.count %></h4>
+		<span id="fontsize">Số lượng comment: </span>
+		<span id="add_count fontsize"><%= @state.comments.count %></span>
+		<div id="state_comment">
 		<%= render @state.comments %>
+		</div>
+		<div id="form_comment">
 		<%= render 'comments/form' %>
+		</div>
 	</div>
 </div>
 <br>
