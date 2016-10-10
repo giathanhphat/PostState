@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row khunghinh">
 	<div class="col-md-12">
 		<div class="col-md-2">
 			<div class="thumbnail">
@@ -11,12 +11,11 @@
 		</div>
 	</div>
 	<div class="canletrai"><strong>State: </strong>
-		<%= @state.content %>
+		<div class="fontsizestate"><%= @state.content %></div>
 	</div>
 	<div class="comment">
-		<h2>Comment</h2>
-		<span id="fontsize">Số lượng comment: </span>
-		<span id="add_count fontsize"><%= @state.comments.count %></span>
+		<h3>Comment</h3>
+		<h4>Số lượng comment: <%= @state.comments.count %></h4>
 		<div id="state_comment">
 		<%= render @state.comments %>
 		</div>
@@ -24,11 +23,11 @@
 		<%= render 'comments/form' %>
 		</div>
 	</div>
-</div>
-<br>
-<div class="taobutton">
+	<div class="taobutton">
 <%= link_to 'Back', root_path %>
 </div>
+</div>
+
 
 
 

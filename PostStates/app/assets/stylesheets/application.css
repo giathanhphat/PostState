@@ -81,6 +81,11 @@ a {
 
 .canletrai{
 	margin-left: 30px;
+	font-size: 20px;
+}
+
+.fontsizestate{
+	font-size: 18px;
 }
 
 .taobutton{
@@ -100,6 +105,9 @@ a {
 	margin-left: 30px;
 }
 
-#fontsize{
-	font-size: 20px;
+.khunghinh{
+	width: 700px;
+	margin-left: 200px;
+	background-color: #e6f2ff;
+	border-radius: 10px;
 }
