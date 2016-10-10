@@ -3,7 +3,7 @@ class StatesController < ApplicationController
 	before_action :authenticate_user!, except: [:index, :show]
 	def index
 		@states = State.all.order("created_at DESC")
-		
+		@states = State.where(["name LIKE ?", "%#{params[:search]}%"])
 	end
 
 	def new

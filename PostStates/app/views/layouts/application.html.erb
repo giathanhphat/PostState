@@ -26,12 +26,21 @@
 					<!-- Brand and toggle get grouped for better mobile display -->
 					<div class="navbar-header">
 						<div class="font-effect-fire-animation">
-							<h1><%= link_to 'Giã Thành Phát State', root_path %></h1>
+							<h2 class="edit_fontheader"><%= link_to 'Giã Thành Phát State', root_path %></h3>
 						</div>
 					</div>
 
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse navbar-ex1-collapse">
+					<form class="navbar-form navbar-left edit_form">
+						<%= form_tag states_path, :method => 'get' do %>
+						  <p>
+						    <%= text_field_tag :search, params[:search] %>
+						    <%= submit_tag "Search", :email => nil %>
+						  </p>
+						<% end %>
+					</form>
+
 						<ul class="nav navbar-nav navbar-right">
 						<% if user_signed_in? %>
 						<li class="colorcover"><%= link_to 'New State', new_state_path %></li>
@@ -57,3 +66,4 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
+
