@@ -4,7 +4,21 @@
 </div>
 <br>
 <div class="field">
-	<%= f.text_area :content, placeholder: "Hiện giờ bạn đang cảm thấy như thế nào?", size: "50x5" %>
+	<%= f.text_area :content, placeholder: "Hiện giờ bạn đang cảm thấy như thế nào?", size: "50x5", maxlength: @maximum_length, id: 'review_text' %>
+	Kí tự sử dung: <span id="counter" data-maximum-length="<%= @maximum_length %>"><%= @maximum_length %></span>
 </div>
 <%= f.submit %>
 <% end %>
+
+<script>
+    $(document).ready(function() {
+      var review_text = $("#review_text");
+      var counter     = $("#counter");
+      var max_length  = counter.data("maximum-length");
+
+      review_text.keyup(function() {
+          counter.text(max_length - ($(this).val().length));
+      });
+
+    });
+</script>

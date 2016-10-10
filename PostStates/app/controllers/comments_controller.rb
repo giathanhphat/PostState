@@ -1,4 +1,9 @@
 class CommentsController < ApplicationController
+	def new
+		@state = State.find(params[:state_id])
+		@maximum_length = @state.comments.validators_on( :comment ).first.options[:maximum]
+	end
+
 	def create
 		@state = State.find(params[:state_id])
 		@comment = @state.comments.create(params[:comment].permit(:comment))

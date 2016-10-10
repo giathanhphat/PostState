@@ -8,6 +8,7 @@ class StatesController < ApplicationController
 
 	def new
 		@state = current_user.states.build
+		@maximum_length = current_user.states.validators_on( :content ).first.options[:maximum]
 		respond_to do |format|
 			format.html
 			format.js # render states/new.js.erb

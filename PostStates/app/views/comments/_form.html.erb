@@ -1,5 +1,21 @@
 
 <%= form_for([@state, @state.comments.build], remote: true) do |f| %>
-	<%= f.text_area :comment, size: "50x5" %>
+	<div class="field">
+	<%= f.text_area :comment, placeholder: "Viết bình luận", size: "50x5", maxlength: @maximum_length, id: 'review_text' %>
+	Kí tự sử dung: <span id="counter" data-maximum-length="<%= @maximum_length %>"><%= @maximum_length %></span>
+	</div>
 	<%= f.submit %>
 <% end %>
+
+<script>
+    $(document).ready(function() {
+      var review_text = $("#review_text");
+      var counter     = $("#counter");
+      var max_length  = counter.data("maximum-length");
+
+      review_text.keyup(function() {
+          counter.text(max_length + 140 - ($(this).val().length));
+      });
+
+    });
+</script>
