@@ -1,5 +1,10 @@
 <%= form_for @state, remote: true do |f| %>
-	<%= f.text_area :content, size: "50x5" %>
-	<br>
-	<%= f.submit %>
+<div class="field">
+	<%= f.text_area :name, placeholder: "Tên người đăng", size: "30x1" %>
+</div>
+<br>
+<div class="field">
+	<%= f.text_area :content, placeholder: "Hiện giờ bạn đang cảm thấy như thế nào?", size: "50x5" %>
+</div>
+<%= f.submit %>
 <% end %>

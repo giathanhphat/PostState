@@ -9,7 +9,8 @@
 				</div>
 			</div>
 			<div class="col-md-10">
-				<h2><%= link_to truncate(state.content, legnth:50), state %></h2>
+				<h3 class="color_name"><%= state.name %></h3>
+				<h4><%= link_to truncate(state.content, legnth:50), state %></h4>
 				<p>Published at <%= time_ago_in_words(state.created_at) %> ago by <%= state.user.email %>.</p>
 				<%= link_to "Edit", edit_state_path(state, remote: true) %> | 
 				<%= link_to "Delete", state_path(state), remote: true, method: :delete, data: { confirm: "Bạn chắc chắc muốn xóa?"} %> | 
