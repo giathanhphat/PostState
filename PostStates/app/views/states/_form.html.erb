@@ -1,6 +1,6 @@
 <%= form_for @state, remote: true do |f| %>
 <div class="field">
-	<%= f.text_area :name, placeholder: "Tên người đăng", size: "30x1" %>
+	<%= f.text_area :name, placeholder: "Tên người đăng", size: "30x1", value:  current_user.username %>
 </div>
 <br>
 <div class="field">
