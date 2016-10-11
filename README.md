@@ -48,7 +48,7 @@ Quy trình sử dụng [GIT Workflow](https://www.atlassian.com/git/tutorials/co
 
 Here's a walkthrough of implemented user stories:
 
-![Video Walkthrough](![1312417_poststate](https://cloud.githubusercontent.com/assets/16373591/19279463/bc091c40-900b-11e6-824b-360dead6294a.gif))
+![1312417_poststate](https://cloud.githubusercontent.com/assets/16373591/19279463/bc091c40-900b-11e6-824b-360dead6294a.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
