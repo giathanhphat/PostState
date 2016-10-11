@@ -4,7 +4,7 @@
 
 Danh sách sinh viên: **1312417 - Giã Thành Phát**
 
-URL: **Insert your Heroku URL here**
+URL: **https://whispering-caverns-46576.herokuapp.com/**
 
 ## Chức năng
 
