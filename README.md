@@ -1,8 +1,8 @@
-# Homework 1 - *Name of App*
+# Homework 2 - *PostState App*
 
-**Name of your app** Trang web cho phép người dùng chia sẻ và cập nhật trạng thái. Due Date: 24:00 11/10/2016
+**PostState App** Trang web cho phép người dùng chia sẻ và cập nhật trạng thái. Due Date: 24:00 11/10/2016
 
-Danh sách sinh viên: **Your Name Here**
+Danh sách sinh viên: **1312417 - Giã Thành Phát**
 
 URL: **Insert your Heroku URL here**
 
@@ -10,16 +10,16 @@ URL: **Insert your Heroku URL here**
 
 Danh sách chức năng **bắt buộc**:
 
-* [ ] Người dùng được phép đăng nhập bằng tên tài khoản, mật khẩu.
-* [ ] Người dùng có thể đăng trạng thái lên trang cá nhân.
+* [ x] Người dùng được phép đăng nhập bằng tên tài khoản, mật khẩu.
+* [ x] Người dùng có thể đăng trạng thái lên trang cá nhân.
 * [ ] Ở trang home, người dùng có thể xem trạng thái của bạn bè và những người đang được người đó follow. Cần thể hiện đầy đủ thông tin của trạng thái như hình ảnh, avatar,...
-* [ ] Người dùng có thể tìm kiếm người dùng khác
+* [ x] Người dùng có thể tìm kiếm người dùng khác
 * [ ] Người dùng có thể follow người dùng khác
-* [ ] Người dùng có thể thêm comment vào các bài đăng.
-* [ ] Người dùng có thể đăng nhập bằng Twitter qua OAuth(Sử dụng Omniauth Twitter)
+* [ x] Người dùng có thể thêm comment vào các bài đăng.
+* [ x] Người dùng có thể đăng nhập bằng Twitter qua OAuth(Sử dụng Omniauth Twitter)
 * [ ] Sử dụng Twitter API để cho phép tạo tweet lên Twitter của người dùng khi đăng trạng thái thành công (Sử dụng [Twitter Gem](https://github.com/sferik/twitter) và [đăng ký Application Token](https://apps.twitter.com))
-* [ ] Cần thể hiện số ký tự còn lại khi gõ (Twitter cho phép gõ trạng thái tối đa 140 ký tự)
-* [ ] Cần thực hiện AJAX và javascript để hạn chế nạp lại trang.
+* [ x] Cần thể hiện số ký tự còn lại khi gõ (Twitter cho phép gõ trạng thái tối đa 140 ký tự)
+* [ x] Cần thực hiện AJAX và javascript để hạn chế nạp lại trang.
 * [ ] Cho phép tải danh sách các tweet vào trang chủ của người dùng
 * [ ] Cần quản lý API Key bằng biến môi trường (Sử dụng [dotenv gem](https://github.com/bkeepers/dotenv))
 
@@ -48,7 +48,7 @@ Quy trình sử dụng [GIT Workflow](https://www.atlassian.com/git/tutorials/co
 
 Here's a walkthrough of implemented user stories:
 
-![Video Walkthrough](relative-path-to-your-gif-file-on-github)
+![Video Walkthrough](![1312417_poststate](https://cloud.githubusercontent.com/assets/16373591/19279463/bc091c40-900b-11e6-824b-360dead6294a.gif))
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
